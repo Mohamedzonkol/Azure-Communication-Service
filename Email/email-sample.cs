@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Azure;
 using Azure.Communication.Email;
 
-string connectionString = "endpoint=https://test-788.africa.communication.azure.com/;accesskey=Ddqx8i655LBHE0wOJ6gPMbAXmbDfnKjy5IpsO5q00jAJ0P4FzEr5JQQJ99ALACULyCpxOwjyAAAAAZCScBpW";
+string connectionString =  Environment.GetEnvironmentVariable("COMMUNICATION_SERVICES_CONNECTION_STRING");
 var emailClient = new EmailClient(connectionString);
 
 
