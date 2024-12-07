@@ -14,7 +14,7 @@ class Program
     {
         // Input and output languages are defined as parameters.
         string route = "/translate?api-version=3.0&from=en&to=fr&to=ar";
-        string textToTranslate = "I would really like to drive your car around the block a few times!";
+        string textToTranslate = "I am Mohamed Zonkol, I would really like to drive your car around the block a few times!";
         object[] body = new object[] { new { Text = textToTranslate } };
         var requestBody = JsonConvert.SerializeObject(body);
 
